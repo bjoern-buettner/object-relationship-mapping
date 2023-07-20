@@ -18,7 +18,7 @@ class Database
     private ?PDO $database = null;
 
     public function __construct(
-        private readonly string $databaseName,
+        private readonly string $databaseDatabase,
         private readonly string $databaseHost,
         private readonly string $databaseUser,
         private readonly string $databasePassword,
