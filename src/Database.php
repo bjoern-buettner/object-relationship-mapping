@@ -106,7 +106,7 @@ class Database
     {
         if (null === $this->database) {
             $this->database = new PDO(
-                "mysql:host={$this->databaseHost};dbname={$this->databaseName}",
+                "mysql:host={$this->databaseHost};dbname={$this->databaseDatabase}",
                 $this->databaseUser,
                 $this->databasePassword,
                 [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
