@@ -50,6 +50,7 @@ class Database
             foreach ($parameters as $key => $value) {
                 $this->bindValue($statement, $value, $key);
             }
+            $statement->execute();
             return array_map(
                 function (array $assoc) use ($rc): object {
                     $args = [];
