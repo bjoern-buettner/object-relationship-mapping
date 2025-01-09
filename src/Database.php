@@ -22,7 +22,7 @@ class Database
         private readonly string $databaseHost,
         private readonly string $databaseUser,
         private readonly string $databasePassword,
-        private readonly MetadataCache $metadataCache,
+        //private readonly MetadataCache $metadataCache,
     ) {
     }
 
