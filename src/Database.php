@@ -41,7 +41,7 @@ class Database
                 throw new InvalidEntityException("class $class has no usable constructor");
             }
             $table = (new UnicodeString($rc->getShortName()))->snake()->toString();
-            $query = "SELECT * FROM {$table} WHERE 1;";
+            $query = "SELECT * FROM {$table} WHERE 1";
             foreach (array_keys($parameters) as $key) {
                 $column = (new UnicodeString($key))->snake()->toString();
                 $query .= " AND {$column} = :{$key}";
